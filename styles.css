@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #434343;
+    --transition-time: .4s;
+    /* color scheme 1 */
+    --blue: #040F3C;
+    --white: #FCF5E8;
+    --bar-gradient-1: linear-gradient(30deg, #FF9D82, #FFCA66);
+    /* end of scheme 1 */
+  }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #7a7adb;
+    background-image: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+
+    background-size: 200%;
+    animation: bar-animation 20s infinite alternate;
+    width: 100%;
+    min-height: 100vh;
+    /* overflow-y: hidden; */
+    margin: auto;
+    color: var(--white);
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    width: 80%;
+    margin: auto;
+    color: var(--white);
+}
+
+.about-me, .skills, .projects { 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    background-color: #fcf5e810;
+    border-radius: 2em;
+}
+
+.about-me h2, .skills h2, .projects h2 {
+    margin-top: 10%;
+    font-size: 4em;
+}
+
+.skills-wrapper {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+}
+
+.skills-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-bar {
+    border-radius: 2em;
+    width: 100%;
+    background-color: var(--white);
+    align-self: flex-end;
+}
+
+.skill {
+    border-radius: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bar {
+    /* width: 80%; */
+    background-image: var(--bar-gradient-1);
+    background-size: 300%;
+    animation: bar-animation 5s infinite alternate;
+}
+
+.p80 {
+    width: 80%;
+}
+
+.p70 {
+    width: 70%;
+}
+
+.p60 {
+    width: 60%;
+}
+
+.p30 {
+    width: 30%;
+}
+
+@keyframes bar-animation {
+    0% { background-position: left;}
+
+    100% {
+        background-position: right;
+    }
+}
+
+.about-me p {
+    margin-top: 5%;
+    line-height: 4em;
+    width: 60%;
+}
+
+.button {
+    margin-top: 10%;
+    padding: 0.5em;
+    width: 10em;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: white;
+    color: black;
+}
+
+.contact-wrapper {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.contact-wrapper h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.contact-icons {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* card styles */
+
+
+.card-container {
+    margin-top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    --bg-filter-opacity: 0.6;
+    background-image: linear-gradient(
+        rgba(0,0,0,var(--bg-filter-opacity)),
+        rgba(0,0,0,var(--bg-filter-opacity))),
+        var(--bg-img);
+    height: 15em;
+    width: 20em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 4em -1em rgba(0, 0, 0, 0.767);
+    /* 'all' means all properties will transition */
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+    margin: 1em 1.5em;
+}
+
+.card:hover {
+    transform: rotate(0);
+    box-shadow: 0 0 5em -1em black;
+}
+
+.card h1, p, .tag {
+    margin: 0.5em;
+}
+
+.card h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.card p {
+    font-size: 0.75em;
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+    background: var(--color);
+    color: white;
+}
+
+.card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: 0.8;
+}
+
+/* all divs with .project also have .card styles */
+.project {
+    height: 15em;
+    width: 15em;
+}
+
+/* start hover animation section */
+
+/* set starting properties for animation */
+.card:before, .card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 10%;
+    position: absolute;
+    /* right: -10%; */
+    bottom: -30%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+}
+
+.card:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+}
+
+.card:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+}
+
+.card:hover {
+    color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+    transform: scale(1);
+}
+
+/* LANDING PAGE */
+
+.landing-wrapper {
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.hero-wrapper {
+    width: 1000px;
+    height: 500px;
+}
+
+.hero-wrapper h1 {
+    font-size: 120px;
+}
+
+@media screen and (max-width: 900px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-wrapper h1 {
+        margin-top: 10vh;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about-wrapper {
+        width: 100%;
+    }
+
+    .about-me p {
+        width: 90%;
+    }
+
+    .skills-wrapper {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card-container {
+        margin: auto;
+        margin-top: 1em;    
+    }
+    .card {
+         max-width: calc(100vw - 4rem);
+    }
+  }

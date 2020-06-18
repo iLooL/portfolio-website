@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adam Gumieniak</title>
+</head>
+<body>
+    <div class="landing-wrapper">  
+
+        <div class="hero-wrapper">
+            <h1>Adam</h1>
+            <h1>Gumieniak</h1>    
+            <h1 class="pin-1">Software </h1>
+            <h1 class="pin-2">Developer</h1>        
+        </div>
+    </div>
+    <div class="about-wrapper">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Adam I am soon (August 2020) to be a graduate from Wilfrid Laurier for 
+                Honours Computer Science. During my undergrad I have developed a strong passion for web 
+                development and data science and how the two topics intersect. I am currently looking for 
+                employment in the field of software.
+            </p>
+            <p>
+                I am most comfortable programming in Python and C however I am language agnostic and quickly 
+                pickup new technologies. My resume, Github and the sections below give a more in-depth look at
+                my relevant skills.
+            </p>
+
+            <button class="button">Download Resume</button>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>Python</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p80"></div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>C</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p70"></div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>Java</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p60"></div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>HTML</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p60"></div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>CSS</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p60"></div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-info">
+                        <p>Javascript</p>
+                        <p>30%</p>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skill bar p30"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <!-- ! make all a[hrefs] go to that projects github -->
+                <a href="https://github.com/iLooL/Client-Server-Messaging-Protocol"
+                    target="https://github.com/iLooL/Client-Server-Messaging-Protocol"
+                    class="card project" style="--bg-img: url(./images/java.jpg)">
+                    <div>
+                        <h1>Client Server Messaging Protocol</h1>
+                        <p>
+                        Implemented a bulletin board program using Java stream sockets.
+                        This program is accompanied with RFC documentation.
+                        </p>
+                        <!-- <div class="date">May 22 2020</div> -->
+                        <div class="tags">
+                            <div class="tag">Java</div>
+                            <div class="tag">Networking</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://readme-website.herokuapp.com/"
+                    target="https://readme-website.herokuapp.com/"
+                    class="card project" style="--bg-img: url(./images/news.jpg)">
+                    <div>
+                        <h1>ReadMe News</h1>
+                        <p>
+                        Created a news aggregation website that scrapes and summarizes news
+                        articles. The website was created using the MERN stack, Python and hosted 
+                        on Heroku.
+                        </p>
+                        <!-- <div class="date">May 22 2020</div> -->
+                        <div class="tags">
+                            <div class="tag">Python</div>
+                            <div class="tag">MERN</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/iLooL/image_processing"
+                    target="https://github.com/iLooL/image_processing"
+                    class="card project" style="--bg-img: url(./images/camera.jpg)">
+                    <div>
+                        <h1>Digit Recognition</h1>
+                        <p>
+                        Created various image processing operations in C. These image operations
+                        were then used to recognize digits 0-9 using the nearest neighbor algorithm.
+                        </p>
+                        <!-- <div class="date">May 22 2020</div> -->
+                        <div class="tags">
+                            <div class="tag">C</div>
+                            <div class="tag">Image Processing</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/iLooL/image_processing"
+                    target="https://github.com/iLooL/image_processing"
+                    class="card project" style="--bg-img: url(./images/movie.jpg)">
+                    <div>
+                        <h1>Movie Recommender System</h1>
+                        <p>
+                        Using the MovieLens movie dataset a latent vector based movie
+                        recommendation system was implemented in Python. 
+                        </p>
+                        <div class="tags">
+                            <div class="tag">Python</div>
+                            <div class="tag">Data Mining</div>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+    </div>
+
+    <div class="contact-wrapper">
+        <h2>Get in Touch!</h2>
+        <div class="contact-icons">
+
+            <!-- Github -->
+
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://github.com/iLooL">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M31.998 0.666496C14.328 0.666496 0 15.0495 0 32.7955C0 46.9875 9.168 59.029 21.886 63.278C23.486 63.573 24.07 62.581 24.07 61.73C24.07 60.967 24.042 58.947 24.026 56.2665C15.124 58.208 13.246 51.9595 13.246 51.9595C11.792 48.249 9.694 47.261 9.694 47.261C6.788 45.267 9.914 45.3075 9.914 45.3075C13.124 45.5345 14.814 48.6185 14.814 48.6185C17.67 53.528 22.304 52.1105 24.128 51.287C24.418 49.211 25.246 47.795 26.16 46.992C19.054 46.181 11.584 43.426 11.584 31.1155C11.584 27.6075 12.83 24.7405 14.878 22.4935C14.548 21.6805 13.45 18.4155 15.19 13.992C15.19 13.992 17.878 13.1285 23.99 17.285C26.544 16.572 29.28 16.217 32.002 16.2025C34.72 16.2165 37.458 16.572 40.014 17.285C46.122 13.1285 48.804 13.992 48.804 13.992C50.55 18.4155 49.452 21.6805 49.122 22.4935C51.174 24.7405 52.412 27.6075 52.412 31.1155C52.412 43.456 44.93 46.173 37.802 46.968C38.95 47.96 39.974 49.9195 39.974 52.9175C39.974 57.2125 39.934 60.676 39.934 61.7305C39.934 62.59 40.51 63.59 42.134 63.2745C54.84 59.017 64 46.9835 64 32.7955C64 15.0495 49.672 0.666496 31.998 0.666496Z" fill="#EEEEEE"/>
+            </a>
+            </svg>
+
+            <!-- Email -->
+
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="mailto:adam.gumieniak98@hotmail.com">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.094 34.9178L51.4697 49.3843H12.5302L31.9059 34.9178L32 34.9875L32.094 34.9178Z" fill="#F7F5ED"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5306 49.6515L32.0208 35.5015L31.9149 35.4259L31.9034 35.434L31.8661 35.4077C30.064 34.1385 28.2697 32.8493 26.4796 31.5462C26.4794 31.5461 26.4793 31.546 26.4791 31.5458C21.8219 28.1554 17.1935 24.6705 12.5302 21.1978V49.6518L12.5306 49.6515L12.5306 49.6515Z" fill="#F7F5ED"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M51.4697 49.3844H52.8374C54.5768 49.3844 55.9999 47.9613 55.9999 46.2218V17.4097C55.9999 15.6703 54.5768 14.2471 52.8374 14.2471H51.4697V49.3844V49.3844Z" fill="#E75A4D"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5302 49.6519H11.1625C9.4231 49.6519 7.99994 48.2288 7.99994 46.4893V17.4098C7.99994 15.6704 9.42306 14.2473 11.1625 14.2473H12.5302V49.6519V49.6519Z" fill="#E75A4D"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.094 28.7138L51.4697 14.2471H12.5302L31.9059 28.7138L32 28.6441L32.094 28.7138Z" fill="#F7F5ED"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0209 35.5015L51.4698 49.3844V21.1978C48.2523 23.5939 45.0513 25.9958 41.846 28.3685C38.8119 30.6144 35.774 32.8341 32.7145 34.998L32.7136 34.9986L32.0209 35.5015L32.0209 35.5015Z" fill="#B7B6AD"/>
+                <path d="M32.1916 35.5197L12.6035 49.7528L12.457 49.5506L32.0453 35.3175L32.1916 35.5197Z" fill="#B7B6AD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0209 35.5015C24.6367 31.103 15.2165 23.1528 8.00003 17.8412L10.1352 14.4943L12.4679 14.3035L12.5303 14.2472L31.906 28.7138L32 28.6441L32.0941 28.7138L51.4698 14.2472L51.5322 14.3035L53.8649 14.4943L56 17.8412C48.195 23.586 40.048 30.234 32.0209 35.5015H32.0209Z" fill="#E75A4D"/>
+            </a>
+            </svg>
+
+            <!-- Instagram -->
+
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://www.instagram.com/adamgumieniak/">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M52.9215 14.9185C52.9215 17.0395 51.202 18.7585 49.0815 18.7585C46.961 18.7585 45.2415 17.0395 45.2415 14.9185C45.2415 12.7975 46.961 11.0785 49.0815 11.0785C51.2025 11.0785 52.9215 12.7975 52.9215 14.9185ZM32 42.6665C26.109 42.6665 21.3335 37.891 21.3335 32C21.3335 26.109 26.109 21.3335 32 21.3335C37.891 21.3335 42.6665 26.109 42.6665 32C42.6665 37.891 37.891 42.6665 32 42.6665ZM32 15.5675C22.9245 15.5675 15.5675 22.9245 15.5675 32C15.5675 41.0755 22.9245 48.4325 32 48.4325C41.0755 48.4325 48.4325 41.0755 48.4325 32C48.4325 22.9245 41.0755 15.5675 32 15.5675ZM32 5.766C40.5445 5.766 41.5565 5.7985 44.9305 5.9525C48.0505 6.095 49.745 6.616 50.8725 7.0545C52.366 7.635 53.432 8.3285 54.552 9.4485C55.672 10.568 56.3655 11.634 56.946 13.128C57.384 14.2555 57.9055 15.95 58.048 19.07C58.202 22.4445 58.2345 23.4565 58.2345 32.001C58.2345 40.5455 58.202 41.5575 58.048 44.9315C57.9055 48.0515 57.3845 49.746 56.946 50.8735C56.3655 52.367 55.672 53.433 54.552 54.553C53.4325 55.673 52.3665 56.3665 50.8725 56.947C49.745 57.385 48.0505 57.9065 44.9305 58.049C41.5565 58.203 40.5445 58.2355 32 58.2355C23.455 58.2355 22.443 58.203 19.069 58.049C15.949 57.9065 14.2545 57.3855 13.127 56.947C11.6335 56.3665 10.5675 55.673 9.4475 54.553C8.328 53.4335 7.634 52.3675 7.0535 50.8735C6.6155 49.746 6.094 48.0515 5.9515 44.9315C5.7975 41.557 5.765 40.545 5.765 32.001C5.765 23.4565 5.7975 22.4445 5.9515 19.07C6.094 15.95 6.615 14.2555 7.0535 13.128C7.634 11.6345 8.3275 10.5685 9.4475 9.4485C10.567 8.3285 11.633 7.635 13.127 7.0545C14.2545 6.6165 15.949 6.095 19.069 5.9525C22.4435 5.7985 23.4555 5.766 32 5.766ZM32 0C23.3095 0 22.2195 0.037 18.8065 0.1925C15.4005 0.348 13.074 0.889 11.039 1.68C8.9345 2.4975 7.15 3.592 5.371 5.371C3.592 7.15 2.4975 8.9345 1.68 11.039C0.889 13.0745 0.348 15.4005 0.1925 18.8065C0.037 22.2195 0 23.3095 0 32C0 40.6905 0.037 41.7805 0.1925 45.1935C0.348 48.5995 0.889 50.9255 1.68 52.961C2.4975 55.0655 3.592 56.85 5.371 58.629C7.15 60.408 8.9345 61.502 11.039 62.32C13.0745 63.111 15.4005 63.652 18.8065 63.8075C22.2195 63.963 23.3095 64 32 64C40.6905 64 41.7805 63.963 45.1935 63.8075C48.5995 63.652 50.9255 63.111 52.961 62.32C55.0655 61.502 56.85 60.408 58.629 58.629C60.408 56.85 61.502 55.0655 62.32 52.961C63.111 50.9255 63.652 48.5995 63.8075 45.1935C63.963 41.7805 64 40.6905 64 32C64 23.3095 63.963 22.2195 63.8075 18.8065C63.652 15.4005 63.111 13.0745 62.32 11.039C61.502 8.9345 60.408 7.15 58.629 5.371C56.85 3.592 55.0655 2.498 52.961 1.68C50.9255 0.889 48.5995 0.348 45.1935 0.1925C41.7805 0.037 40.6905 0 32 0Z" fill="#EEEEEE"/>
+            </a>
+            </svg>
+
+            <!-- LinkedIn -->
+
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://www.linkedin.com/in/adam-gumieniak-9b817816b/">   
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.6145 21.5665H14.0885V61.091H1.6145V21.5665ZM7.5335 16.623H7.443C2.9275 16.623 0 13.6015 0 9.7715C0 5.867 3.014 2.909 7.62 2.909C12.222 2.909 15.052 5.8595 15.142 9.7605C15.142 13.59 12.222 16.623 7.5335 16.623ZM64 61.091H49.855V40.6375C49.855 35.284 47.6425 31.629 42.777 31.629C39.0555 31.629 36.986 34.0955 36.0225 36.472C35.6615 37.325 35.7175 38.5135 35.7175 39.702V61.0905H21.7045C21.7045 61.0905 21.885 24.8595 21.7045 21.566H35.7175V27.769C36.5455 25.057 41.023 21.186 48.169 21.186C57.0345 21.186 63.9995 26.871 63.9995 39.1135V61.091H64Z" fill="#EEEEEE"/>
+            </a>
+            </svg>
+                
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
